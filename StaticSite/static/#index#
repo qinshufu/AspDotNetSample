@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page - StaticSite</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0" />
+    <link rel="stylesheet" href="/StaticSite.styles.css?v=EQIZFwSE5lglteV62Wc1YWL73irnb_d2hugXfmlZslQ" />
+</head>
+<body>
+    <header>
+        <nav b-ub69h2ppxx class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div b-ub69h2ppxx class="container">
+                <a class="navbar-brand" href="/">StaticSite</a>
+                <button b-ub69h2ppxx class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span b-ub69h2ppxx class="navbar-toggler-icon"></span>
+                </button>
+                <div b-ub69h2ppxx class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul b-ub69h2ppxx class="navbar-nav flex-grow-1">
+                        <li b-ub69h2ppxx class="nav-item">
+                            <a class="nav-link text-dark" href="/">Home</a>
+                        </li>
+                        <li b-ub69h2ppxx class="nav-item">
+                            <a class="nav-link text-dark" href="/Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div b-ub69h2ppxx class="container">
+        <main b-ub69h2ppxx role="main" class="pb-3">
+            
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+        </main>
+    </div>
+
+    <footer b-ub69h2ppxx class="border-top footer text-muted">
+        <div b-ub69h2ppxx class="container">
+            &copy; 2023 - StaticSite - <a href="/Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0"></script>
+
+    
+</body>
+</html>
