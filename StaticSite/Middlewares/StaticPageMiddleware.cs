@@ -7,7 +7,7 @@
     {
         private readonly RequestDelegate _next;
 
-        private readonly string StaticPagePath = Path.Combine(Environment.CurrentDirectory, "static");
+        private readonly string StaticPagePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "static");
 
         private static TimeSpan StaticPageTtl = TimeSpan.FromHours(2);
 
@@ -63,7 +63,7 @@
             var filePath = Path.Join(StaticPagePath, requestPath);
 
             if (filePath.EndsWith("/"))
-                filePath = filePath[..(filePath.Length - 1)] + Path.DirectorySeparatorChar + "#index#";
+                filePath = filePath[..(filePath.Length - 1)] + Path.DirectorySeparatorChar + "index";
 
             return filePath;
         }
