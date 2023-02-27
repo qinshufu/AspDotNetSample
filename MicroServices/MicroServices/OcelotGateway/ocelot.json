@@ -1,16 +1,29 @@
 {
     "Routes": [
         {
-            "DownstreamPathTemplate": "/",
+            "DownstreamPathTemplate": "/{url}/{p}",
             "DownstreamScheme": "http",
-            "DownstreamHostAndPorts": [
-                {
-                    "Host": "127.0.0.1",
-                    "Port": 5166
-                }
-            ],
-            "UpstreamPathTemplate": "/",
-            "UpstreamHttpMethod": [ "POST", "PUT", "GET" ]
+            //"DownstreamHostAndPorts": [
+            //    {
+            //        "Host": "127.0.0.1",
+            //        "Port": 5166
+            //    }
+            //],
+            "UpstreamPathTemplate": "/{url}/{p}",
+            "UpstreamHttpMethod": [ "POST", "PUT", "GET" ],
+            "ServiceName": "ServerOne",
+            "LoadBalancerOptions": {
+                "Type": "LeastConnection"
+            }
         }
-    ]
+    ],
+    "GlobalConfiguration": {
+        "UseServiceDiscovery": true,
+        "ServiceDiscoveryProvider": {
+            "Host": "localhost",
+            "Port": 8500,
+            "Type": "PollConsul",
+            "PollingInterval": 100
+        }
+    }
 }
