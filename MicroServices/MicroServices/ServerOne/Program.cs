@@ -33,7 +33,7 @@ app.UseConsul(new ConsulRegistrationConfigration()
 {
     HealthCheckUri = "http://localhost:5166/health/check",
     ServerAddress = "127.0.0.1",
-    ServerPort = 8500,
+    ServerPort = 5166,
     ServiceName = Assembly.GetEntryAssembly()?.GetName().Name ?? Guid.NewGuid().ToString()[..5],
 });
 
